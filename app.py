@@ -36,7 +36,7 @@ def connect_socket(ws):
 
 
 def get_file_url(filename):
-    file_url = 'http://%s:%s/%s%s' % (HOST, PORT, UPLOAD_PATH, filename)
+    file_url = '%s%s%s' % (HOST, UPLOAD_PATH, filename)
     return file_url
 
 
