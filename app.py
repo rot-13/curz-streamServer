@@ -46,6 +46,7 @@ def get_file_url(filename):
 def broadcast_file(file_url):
     for speaker in speakers:
         if not speaker.closed:
+            print 'sending to speaker: ' + speaker
             speaker.send(file_url)
 
 
