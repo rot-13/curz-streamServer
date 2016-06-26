@@ -2,6 +2,7 @@ from flask import Flask
 from flask import request
 from werkzeug.utils import secure_filename
 from flask_sockets import Sockets
+import gevent
 import os
 
 HOST = 'https://cpc-curz.herokuapp.com/'
@@ -31,7 +32,9 @@ def connect_socket(ws):
     speakers.append(ws)
     print 'connected'
     while not ws.closed:
+        gevent.sleep(0.1)
         message = ws.receive()
+        print message
         ws.send(message)
 
 
