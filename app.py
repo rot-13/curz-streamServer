@@ -4,8 +4,8 @@ from werkzeug.utils import secure_filename
 from flask_sockets import Sockets
 import os
 
-HOST = '192.168.2.37'
-PORT = 5000
+HOST = 'https://cpc-curz.herokuapp.com/'
+PORT = 80
 UPLOAD_PATH = 'static/audio/'
 UPLOAD_FOLDER = './%s'%(UPLOAD_PATH)
 ALLOWED_EXTENSIONS = set(['m4a', 'mp3'])
