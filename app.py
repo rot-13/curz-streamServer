@@ -7,7 +7,7 @@ import os
 HOST = 'https://cpc-curz.herokuapp.com/'
 PORT = 443
 UPLOAD_PATH = 'static/audio/'
-UPLOAD_FOLDER = './%s'%(UPLOAD_PATH)
+UPLOAD_FOLDER = './%s' % (UPLOAD_PATH)
 ALLOWED_EXTENSIONS = set(['m4a', 'mp3'])
 
 if not os.path.exists(UPLOAD_FOLDER):
