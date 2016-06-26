@@ -5,7 +5,7 @@ from flask_sockets import Sockets
 import os
 
 HOST = 'https://cpc-curz.herokuapp.com/'
-PORT = 80
+PORT = 443
 UPLOAD_PATH = 'static/audio/'
 UPLOAD_FOLDER = './%s'%(UPLOAD_PATH)
 ALLOWED_EXTENSIONS = set(['m4a', 'mp3'])
